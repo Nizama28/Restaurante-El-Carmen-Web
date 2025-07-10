@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Carmen - Restaurante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tus CSS -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="El Carmen" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-slide" style="background-image: url('img/inicio.jpg');"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold hero-title">El Carmen</h1>
+          <p class="lead hero-subtitle">Restaurante - Picantiería</p>
+          <a href="#" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('img/inicio2.jpg');"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold hero-title">El Carmen</h1>
+          <p class="lead hero-subtitle">Restaurante - Picantiería</p>
+          <a href="#" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('img/ceviche2.jpg');"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="display-3 fw-bold hero-title">El Carmen</h1>
+          <p class="lead hero-subtitle">Restaurante - Picantiería</p>
+          <a href="#" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- SECCIÓN MENÚ Y RESTAURANTE -->
+  <section class="section-yellow">
+    <div class="container py-5">
+      <div class="row justify-content-center g-4">
+        <!-- Tarjeta MENÚ -->
+        <div class="col-md-6 col-lg-5">
+          <div class="card menu-card h-100">
+            <img src="img/foto4.jpg" class="card-img-top" alt="Nuestro menú">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-center">NUESTRO MENÚ</h5>
+              <p class="card-text text-center flex-grow-1">
+                En nuestro menú todo es delicioso y preparado con amor. Descubre una explosión de sabores tradicionales.
+              </p>
+              <div class="text-center mt-3">
+                <a href="#" class="btn btn-primary-custom">Ver menú</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta RESTAURANTE -->
+        <div class="col-md-6 col-lg-5">
+          <div class="card menu-card h-100">
+            <img src="img/foto5.jpg" class="card-img-top" alt="Nuestro restaurante">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-center">RESTAURANTE</h5>
+              <p class="card-text text-center flex-grow-1">
+                Nuestro restaurante es un espacio de alegría, lleno de sabor, tradición y buena atención.
+              </p>
+              <div class="text-center mt-3">
+                <a href="nuestro-restaurante.html" class="btn btn-primary-custom">Ver fotos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOMOS EL CARMEN -->
+  <section class="py-5">
+    <div class="container">
+      <div class="somos-row">
+        <div class="somos-col somos-img">
+          <img src="img/plato.png" alt="Comida criolla">
+        </div>
+        <div class="somos-col somos-text">
+          <h2>¡SOMOS EL CARMEN!</h2>
+          <p>
+            Nosotros somos El Carmen, un restaurante picantiería de Piura - La Unión, dedicados a la gastronomía tradicional criolla.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCUÉNTRANOS -->
+  <section class="section-yellow text-center">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        <h3 class="fw-bold mb-0">¡ENCUÉNTRANOS!</h3>
+        <a href="ubicacion.html" class="btn btn-light rounded-pill">
+          <i class="fas fa-map-marker-alt me-2"></i> Ir a nuestro mapa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 mb-3">
+          <h5 class="fw-bold">Sobre nosotros</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Nuestra historia</a></li>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Misión</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <h5 class="fw-bold">Políticas</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="politica.html">Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-end">
+          <h5 class="fw-bold">¡SABOR QUE VIBRA!</h5>
+          <div class="mt-3">
+            <a href="https://www.facebook.com/profile.php?id=61564880296581&mibextid=ZbWKwL" class="icon-circle me-2" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/elcarmenpicanteria?igsh=MXBweWtvNjZvMTQ2bQ==" class="icon-circle me-2" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51955107285" class="icon-circle" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

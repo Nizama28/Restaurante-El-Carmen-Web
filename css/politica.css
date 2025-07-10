@@ -1,0 +1,93 @@
+/* HERO PRIVACY */
+.privacy-hero {
+  background: url('../img/inicio.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.privacy-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(124,28,28, 0.6);
+  z-index: 1;
+}
+
+.privacy-hero h1 {
+  position: relative;
+  z-index: 2;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* PRIVACY CONTENT */
+.privacy-content {
+  background-color: #f7a100;
+  color: #fff;
+  padding: 50px 30px;
+  width: 100%;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+}
+
+.privacy-content h5 {
+  font-weight: bold;
+  color: #7c1c1c;
+  margin-top: 30px;
+}
+
+.privacy-content ul {
+  padding-left: 1.5rem;
+}
+
+body {
+  background-color: #f7a100;
+}
+
+/* RESPONSIVE QUERIES */
+@media (max-width: 768px) {
+  .privacy-hero {
+    height: 200px;
+  }
+
+  .privacy-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-content {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+
+  .privacy-content h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-hero {
+    height: 150px;
+  }
+
+  .privacy-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-content {
+    padding: 20px 15px;
+    font-size: 0.95rem;
+  }
+
+  .privacy-content h5 {
+    font-size: 1.1rem;
+  }
+}

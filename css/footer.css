@@ -1,13 +1,14 @@
-/* FOOTER STYLES */
 .footer {
-  background-color: #7c1c1c; /* Granate oscuro */
+  background-color: #7c1c1c;
   color: #fff;
   padding: 40px 0;
+  font-family: 'Cinzel', serif;
 }
 
 .footer a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .footer a:hover {
@@ -17,6 +18,7 @@
 .footer h5 {
   font-weight: bold;
   margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .footer .icon-circle {
@@ -30,6 +32,8 @@
   align-items: center;
   font-size: 18px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
 .footer .icon-circle:hover {
@@ -37,24 +41,23 @@
   color: #7c1c1c;
 }
 
-/* ===== RESPONSIVE FOOTER ===== */
+/* Responsive */
 @media (max-width: 991.98px) {
   .footer {
-    padding: 30px 15px;
     text-align: center;
+    padding: 30px 20px;
   }
 
   .footer h5 {
-    margin-bottom: 10px;
     font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
   .footer .icon-circle {
     width: 35px;
     height: 35px;
     font-size: 16px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin: 5px;
   }
 }
 
@@ -71,12 +74,11 @@
     width: 30px;
     height: 30px;
     font-size: 14px;
-    margin-right: 5px;
-    margin-bottom: 8px;
   }
 
   .footer a {
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px 10px;
+    font-size: 0.95rem;
   }
 }

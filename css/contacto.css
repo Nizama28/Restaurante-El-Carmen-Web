@@ -1,0 +1,155 @@
+/* HERO */
+.contact-hero {
+  background-color: #f7a100;
+  color: #7c1c1c;
+  padding: 40px 15px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 0;
+  word-break: break-word;
+}
+
+.contact-hero small {
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+}
+
+/* CONTENIDO */
+.contact-content {
+  background-color: #fff9ec;
+  font-family: 'Cinzel', serif;
+  overflow-x: hidden;
+}
+
+.contact-photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.section-title {
+  color: #7c1c1c;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.phone-box {
+  background: #f7a100;
+  color: #7c1c1c;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-icons a {
+  background: #f7a100;
+  color: #7c1c1c;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: #7c1c1c;
+  color: #fff;
+}
+
+.btn-map {
+  background-color: #7c1c1c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-map:hover {
+  background-color: #f7a100;
+  color: #7c1c1c;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 991.98px) {
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero small {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .phone-box {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive: Phones */
+@media (max-width: 575.98px) {
+  .contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-hero small {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-photo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .phone-box {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .btn-map {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}

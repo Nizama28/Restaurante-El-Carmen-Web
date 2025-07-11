@@ -1,0 +1,51 @@
+/* HERO */
+.cookies-hero {
+  background-color: #7c1c1c;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: 'Cinzel', serif;
+}
+
+.cookies-hero h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.cookies-content {
+  background-color: #fff9ec;
+  font-family: 'Cinzel', serif;
+}
+
+.cookies-photo {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.cookies-text {
+  background-color: #f7a100;
+  color: #7c1c1c;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .cookies-hero h1 {
+    font-size: 2rem;
+  }
+
+  .cookies-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cookies-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .cookies-text {
+    font-size: 0.95rem;
+  }
+}

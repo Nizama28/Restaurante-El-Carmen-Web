@@ -1,0 +1,82 @@
+/* HERO */
+.terminos-hero {
+  background-color: #7c1c1c;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.terminos-hero h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.terminos-image {
+  margin-top: 20px;
+}
+
+.terminos-image img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/* CONTENT */
+.terminos-content {
+  background-color: #f7a100;
+  color: #7c1c1c;
+  padding: 50px 30px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+}
+
+.terminos-content h5 {
+  font-weight: bold;
+  color: #7c1c1c;
+  margin-top: 30px;
+}
+
+.terminos-content p {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: #f7a100;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .terminos-hero h1 {
+    font-size: 1.8rem;
+  }
+  .terminos-image img {
+    max-width: 200px;
+  }
+  .terminos-content {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+  .terminos-content h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminos-hero h1 {
+    font-size: 1.5rem;
+  }
+  .terminos-image img {
+    max-width: 150px;
+  }
+  .terminos-content {
+    padding: 20px 15px;
+    font-size: 0.95rem;
+  }
+  .terminos-content h5 {
+    font-size: 1.1rem;
+  }
+}

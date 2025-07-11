@@ -9,4 +9,8 @@
 .restaurant-img:hover {
   transform: scale(1.05);
 }
-
+main {
+      min-height: 74.3vh;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }

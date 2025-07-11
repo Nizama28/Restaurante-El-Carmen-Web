@@ -153,3 +153,7 @@
     padding: 12px;
   }
 }
+main {
+      min-height: 74.3vh;
+      
+    }

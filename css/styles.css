@@ -19,17 +19,23 @@
   background-color: rgba(0,0,0,0.5);
 }
 
-/* HERO TEXTS */
-.hero-title {
-  font-family: 'Cinzel', serif;
-  color: #fff;
+/* HERO SLIDER IMAGE */
+.hero-slider-img {
+  max-width: 600px;
+  height: auto;
 }
 
-.hero-subtitle {
-  font-family: 'Cinzel', serif;
-  color: #fff;
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 400px;
+  }
+
+  .hero-slider-img {
+    max-width: 180px;
+  }
 }
 
+/* CAROUSEL CAPTION */
 .carousel-caption {
   top: 0;
   bottom: 0;
@@ -65,21 +71,6 @@
   padding: 50px 0;
 }
 
-/* OPTIONAL: Adjust hero height for smaller devices */
-@media (max-width: 768px) {
-  .hero-slide {
-    height: 400px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-}
-
 /* TARJETAS MENU / RESTAURANTE */
 .menu-card {
   border: none;
@@ -112,7 +103,7 @@
 
 /* ---- SOMOS EL CARMEN ---- */
 
-/* Fuerza layout horizontal siempre */
+/* Layout horizontal siempre */
 .somos-row {
   display: flex;
   flex-direction: row;
@@ -134,48 +125,7 @@
   border-radius: 10px;
 }
 
-/* En escritorio, limitar un poco el tamaño máximo de la imagen */
-@media (min-width: 768px) {
-  .somos-img img {
-    max-width: 400px;
-  }
-}
-
-/* Texto ajustado en móvil */
-@media (max-width: 767.98px) {
-  .somos-text h2 {
-    font-size: 1.3rem;
-  }
-
-  .somos-text p {
-    font-size: 1rem;
-  }
-}
-/* ---- SOMOS EL CARMEN ---- */
-
-/* Layout horizontal en todos los tamaños */
-.somos-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Columnas ocupan 50% en todos los tamaños */
-.somos-col {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 15px;
-}
-
-/* Imagen responsive */
-.somos-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* En escritorio, limitar ancho máximo */
+/* En escritorio, limitar tamaño máximo de imagen */
 @media (min-width: 768px) {
   .somos-img img {
     max-width: 400px;
@@ -190,7 +140,7 @@
   }
 }
 
-/* ---- ESTILOS EN MÓVIL ---- */
+/* Texto ajustado en móvil */
 @media (max-width: 767.98px) {
   .somos-text h2 {
     font-size: 1.2rem;

@@ -1,7 +1,16 @@
-/* Importamos Cinzel de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+/* Fondo general */
+body {
+  background: url("../img/fondo.png") center/cover no-repeat fixed;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
 
-/* HERO CAROUSEL SLIDES */
+/* Degradado sobre el carrusel */
+.carousel-inner {
+  background: url("../img/degradado.png") center/cover no-repeat;
+}
+
+/* Hero slides con overlay oscuro */
 .hero-slide {
   height: 500px;
   background-size: cover;
@@ -14,12 +23,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;        
+  width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
 
-/* HERO SLIDER IMAGE */
 .hero-slider-img {
   max-width: 600px;
   height: auto;
@@ -29,25 +37,23 @@
   .hero-slide {
     height: 400px;
   }
-
   .hero-slider-img {
     max-width: 180px;
   }
 }
 
-/* CAROUSEL CAPTION */
+/* Carrusel caption */
 .carousel-caption {
   top: 0;
   bottom: 0;
   height: 100%;
-  background: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* BUTTON STYLES */
+/* Botón personalizado */
 .btn-primary-custom {
   background-color: #7c1c1c;
   border: none;
@@ -64,14 +70,14 @@
   color: #7c1c1c;
 }
 
-/* SECTION YELLOW */
+/* Fondo amarillo */
 .section-yellow {
   background-color: #f7a100;
   color: #fff;
   padding: 50px 0;
 }
 
-/* TARJETAS MENU / RESTAURANTE */
+/* Tarjetas */
 .menu-card {
   border: none;
   border-radius: 15px;
@@ -101,57 +107,38 @@
   color: #333;
 }
 
-/* ---- SOMOS EL CARMEN ---- */
+/* SOMOS EL CARMEN - fondo blanco */
+.section-white {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: 30px 15px;
+  padding: 30px;
+}
 
-/* Layout horizontal siempre */
 .somos-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-/* Columnas ocupan 50% en todos los tamaños */
 .somos-col {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 15px;
 }
 
-/* Imagen responsive */
 .somos-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* En escritorio, limitar tamaño máximo de imagen */
-@media (min-width: 768px) {
-  .somos-img img {
-    max-width: 400px;
-  }
-
-  .somos-text h2 {
-    font-size: 2rem;
-  }
-
-  .somos-text p {
-    font-size: 1.1rem;
-  }
-}
-
-/* Texto ajustado en móvil */
 @media (max-width: 767.98px) {
-  .somos-text h2 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #7c1c1c;
-    margin-bottom: 8px;
+  .somos-row {
+    flex-direction: column;
   }
-
-  .somos-text p {
-    font-size: 0.85rem;
-    color: #333;
-    line-height: 1.3;
+  .somos-col {
+    max-width: 100%;
   }
 }

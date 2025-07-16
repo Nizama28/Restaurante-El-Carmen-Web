@@ -1,3 +1,35 @@
+/* FONDO GENERAL EN BODY */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: url("../img/fondo.png") center/cover no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* FONDO SEMITRANSPARENTE */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  z-index: -1;
+}
+
 /* HERO */
 .about-hero {
   background: url('../img/ceviche2.jpg') center/cover no-repeat;
@@ -7,8 +39,8 @@
   justify-content: center;
   position: relative;
   color: #fff;
-  font-family: 'Cinzel', serif;
   text-align: center;
+  padding: 0 15px;
 }
 
 .about-hero::after {
@@ -27,18 +59,23 @@
   z-index: 2;
   font-weight: 700;
   font-size: 2.8rem;
+  line-height: 1.2;
+  margin: 0;
 }
 
 /* HISTORIA */
+.about-history {
+  padding: 50px 0;
+}
+
 .about-history h2 {
-  font-family: 'Cinzel', serif;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
 .about-history p {
-  font-family: 'Cinzel', serif;
   color: #7c1c1c;
   font-size: 1.1rem;
   text-align: justify;
@@ -49,31 +86,75 @@
   max-width: 70%;
   height: auto;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  display: block;
 }
 
 /* MISIÓN Y VISIÓN */
 .about-mission {
-  background-color: #fff9ec;
-  font-family: 'Cinzel', serif;
+  background-color: transparent;
+  padding: 50px 0;
 }
 
 .about-mission h3 {
   font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 0 15px 0;
 }
 
 .about-mission p {
   color: #7c1c1c;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
-.about-mission .icon {
-  color: #7c1c1c;
-  font-size: 3rem;
+.mission-vision-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+/* CUADROS DE FONDO BLANCO DETRÁS DEL TEXTO E IMAGEN */
+.text-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.text-box img {
+  display: block;
+  margin: 0 auto 15px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-history h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-hero {
+    height: 250px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-history h2 {
     font-size: 2rem;
   }
 
@@ -81,14 +162,71 @@
   .about-mission p {
     font-size: 1rem;
   }
+
+  .about-mission h3 {
+    font-size: 1.8rem;
+  }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .about-hero {
     height: 200px;
   }
 
   .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-history h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-photo {
+    max-width: 80%;
+  }
+
+  .about-mission h3 {
+    font-size: 1.6rem;
+  }
+
+  .mission-vision-img {
+    width: 80px;
+  }
+
+  .text-box {
+    padding: 15px;
+    margin: 15px 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-hero {
+    height: 180px;
+  }
+
+  .about-hero h1 {
     font-size: 1.5rem;
+  }
+
+  .about-history h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-history p,
+  .about-mission p {
+    font-size: 0.95rem;
+  }
+
+  .about-mission h3 {
+    font-size: 1.4rem;
+  }
+
+  .mission-vision-img {
+    width: 60px;
+  }
+
+  .text-box {
+    padding: 10px;
+    margin: 10px 8px;
   }
 }

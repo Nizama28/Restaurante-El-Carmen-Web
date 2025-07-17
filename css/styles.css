@@ -1,27 +1,33 @@
 /* ==========================
    BASE / GENERAL
 ========================== */
-
 body {
   background: url("../img/fondo.png") center/cover no-repeat fixed;
   margin: 0;
   font-family: 'Cinzel', serif;
 }
 
-
 /* ==========================
-   HERO CAROUSEL
+   SECCIÓN HERO + TARJETAS UNIFICADA
 ========================== */
-
-.carousel-inner {
-  background: url("../img/degradado.png") center/cover no-repeat;
+.seccion-hero-amplia {
+  background-color: #f7a100;
+  border-radius: 0 0 60px 60px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
 
+/* ==========================
+   HERO SLIDE
+========================== */
 .hero-slide {
   height: 500px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
+  border-radius: 50px 50px 50px 50px;
+  overflow: hidden;
 }
 
 .hero-slide::after {
@@ -39,15 +45,6 @@ body {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .hero-slide {
-    height: 400px;
-  }
-  .hero-slider-img {
-    max-width: 180px;
-  }
-}
-
 .carousel-caption {
   top: 0;
   bottom: 0;
@@ -58,11 +55,9 @@ body {
   align-items: center;
 }
 
-
 /* ==========================
-   BUTTONS
+   BOTONES
 ========================== */
-
 .btn-primary-custom {
   background-color: #7c1c1c;
   border: none;
@@ -73,7 +68,6 @@ body {
   font-family: 'Cinzel', serif;
   transition: all 0.3s ease;
 }
-
 .btn-primary-custom:hover {
   background-color: #f7a100;
   color: #7c1c1c;
@@ -89,7 +83,6 @@ body {
   font-family: 'Cinzel', serif;
   transition: all 0.3s ease;
 }
-
 .btn-light-custom:hover {
   background-color: #7c1c1c;
   color: #fff;
@@ -100,61 +93,9 @@ body {
   font-size: 0.9rem;
 }
 
-
 /* ==========================
-   SECTIONS
+   TARJETAS
 ========================== */
-
-/* Fondo amarillo redondeado pegado al slider */
-.section-yellow-rounded {
-  background-color: #f7a100;
-  border-radius: 0 0 20px 20px; /* solo esquinas inferiores redondeadas */
-  color: #fff;
-  margin: 16px 0 0 0;
-  padding: 0 20px 40px 20px;
-}
-
-.section-yellow-rounded .container {
-  padding-top: 0;
-}
-
-
-/* ==========================
-   CARDS
-========================== */
-
-/* Clásicas tarjetas con fondo propio (por si se usan en otro lado) */
-.menu-card {
-  border: none;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-card img {
-  height: 250px;
-  object-fit: cover;
-}
-
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-
-.menu-card .card-title {
-  color: #7c1c1c;
-  font-family: 'Cinzel', serif;
-  font-size: 1.5rem;
-}
-
-.menu-card .card-text {
-  font-size: 1rem;
-  color: #333;
-}
-
-
-/* NUEVO: Tarjetas internas sobre fondo amarillo */
 .menu-card-inner {
   background-color: rgba(255,255,255,0.15);
   border: none;
@@ -167,7 +108,6 @@ body {
   justify-content: space-between;
   transition: all 0.3s ease;
 }
-
 .menu-card-inner:hover {
   background-color: rgba(255,255,255,0.25);
 }
@@ -177,31 +117,54 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 1.2rem;
 }
-
 .menu-card-inner .card-text {
   color: rgba(255,255,255,0.8);
   font-size: 0.85rem;
   margin-bottom: 10px;
 }
 
-
 /* ==========================
-   SOMOS EL CARMEN SECTION
+   SECCIÓN SOMOS
 ========================== */
-
-.section-white {
+.somos-section {
   background: #fff;
   border-radius: 20px;
   margin: 30px 15px;
   padding: 30px 20px;
 }
 
+.somos-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.somos-img-col {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+}
+
+.somos-text-col {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.somos-img-responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 .somos-title {
   color: #7c1c1c;
   font-family: 'Cinzel', serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .somos-title .highlight {
@@ -210,70 +173,81 @@ body {
 
 .somos-text {
   color: #333;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
-
-.somos-img-responsive {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px;
-  display: inline-block;
-}
-
-@media (min-width: 768px) {
-  .somos-title {
-    text-align: left;
-    font-size: 2.5rem;
-  }
-  .somos-text {
-    text-align: left;
-    font-size: 1.1rem;
-  }
-  .somos-img-responsive {
-    max-width: 350px;
-  }
-}
-
-.somos-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.somos-col {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 15px;
-}
-
-.somos-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media (max-width: 767.98px) {
-  .somos-row {
-    flex-direction: column;
-  }
-  .somos-col {
-    max-width: 100%;
-  }
-}
-
 
 /* ==========================
-   MOBILE ADJUSTMENTS
+   ENCUÉNTRANOS
 ========================== */
+.encuentranos-section {
+  background-color: #7c1c1c;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
 
-@media (max-width: 576px) {
+.encuentranos-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
+
+.btn-map {
+  background-color: #f7a100;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cinzel', serif;
+  transition: all 0.3s ease;
+}
+.btn-map:hover {
+  background-color: #fff;
+  color: #7c1c1c;
+}
+.btn-map i {
+  font-size: 1.1rem;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 250px;
+    border-radius: 30px 30px 30px 30px;
+  }
+  .hero-slider-img {
+    max-width: 180px;
+  }
+  .somos-flex {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .somos-img-col {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .somos-text-col {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+  .somos-title {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .somos-text {
+    font-size: 0.8rem;
+    text-align: left;
+  }
   .menu-card-inner {
-    padding: 0px 0px;
+    padding: 0;
     min-height: 200px;
   }
   .menu-card-inner .card-title {
@@ -285,5 +259,14 @@ body {
   .btn-sm-custom {
     padding: 5px 14px;
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .encuentranos-title {
+    font-size: 1.4rem;
+  }
+  .btn-map {
+    font-size: 0.9rem;
+    padding: 8px 20px;
   }
 }

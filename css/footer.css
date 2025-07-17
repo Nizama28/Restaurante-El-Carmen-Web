@@ -1,12 +1,16 @@
+/* ==========================
+   FOOTER CON LOGO
+========================== */
+
 .footer {
-  background-color: #7c1c1c;
-  color: #fff;
+  background-color: #f7a100;
+  color: #000;
   padding: 40px 0;
   font-family: 'Cinzel', serif;
 }
 
 .footer a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -19,10 +23,17 @@
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 1.3rem;
+  color: #7c1c1c;
+}
+
+.footer .footer-logo {
+  width: 45px;
+  height: auto;
+  margin-top: 2px;
 }
 
 .footer .icon-circle {
-  background: #f7a100;
+  background: #fff;
   color: #7c1c1c;
   border-radius: 50%;
   width: 40px;
@@ -37,11 +48,15 @@
 }
 
 .footer .icon-circle:hover {
-  background: #fff;
-  color: #7c1c1c;
+  background: #7c1c1c;
+  color: #fff;
 }
 
-/* Responsive */
+
+/* ==========================
+   FOOTER RESPONSIVE
+========================== */
+
 @media (max-width: 991.98px) {
   .footer {
     text-align: center;
@@ -53,11 +68,21 @@
     margin-bottom: 10px;
   }
 
+  .footer .footer-logo {
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
   .footer .icon-circle {
     width: 35px;
     height: 35px;
     font-size: 16px;
     margin: 5px;
+  }
+
+  .footer .d-flex.align-items-start {
+    flex-direction: column;
+    align-items: center !important;
   }
 }
 

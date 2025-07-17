@@ -30,28 +30,33 @@ body::before {
   z-index: -1;
 }
 
-/* HERO */
+/* HERO SOBRE NOSOTROS CON FONDO AMARILLO Y DEGRADADO */
 .about-hero {
-  background: url('../img/ceviche2.jpg') center/cover no-repeat;
-  height: 300px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  color: #fff;
   text-align: center;
+  color: #fff;
   padding: 0 15px;
+  height: 400px; 
+  background-color: #f7a100;
+  border-radius: 9%;
+  overflow: hidden;
 }
 
-.about-hero::after {
+.about-hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(124,28,28, 0.6);
-  z-index: 1;
+  top: 40px; /* margen superior para que no llegue hasta arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 300px; /* altura menor que el contenedor */
+  background: linear-gradient(to right, rgba(139,0,0,0.85), rgba(139,0,0,0.2), transparent),
+              url('../img/foto4.jpg') center/cover no-repeat;
+  border-radius: 25px;
+  z-index: 0;
 }
 
 .about-hero h1 {
@@ -170,11 +175,18 @@ body::before {
 
 @media (max-width: 767.98px) {
   .about-hero {
-    height: 200px;
+    height: 300px;
   }
 
   .about-hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .about-hero::before {
+   height: 120px;
+    top: 30px;
+    width: 95%;
+    border-radius: 20px;
   }
 
   .about-history h2 {

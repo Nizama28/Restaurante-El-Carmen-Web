@@ -1,83 +1,140 @@
-/* HERO */
+/* FONDO GENERAL */
+body {
+  background: url("../img/fondo.png") center/cover no-repeat fixed;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
 
+/* HERO */
 .terminos-hero {
-  background-color: #7c1c1c;
+  background-color: rgba(124, 28, 28, 0.95);
   color: #fff;
   padding: 40px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .terminos-hero h1 {
   font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 2.5rem;
-  z-index: 2;
-  position: relative;
+  margin: 0;
+  text-align: left;
 }
 
-.terminos-image {
-  margin-top: 20px;
+.hero-text {
+  flex: 1;
+  min-width: 200px;
 }
 
-.terminos-image img {
-  max-width: 300px;
+.hero-img {
+  flex: 0 0 auto;
+}
+
+.hero-img img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
   border-radius: 50%;
+  border: 4px solid #fff;
 }
 
-/* CONTENT */
+/* CONTENIDO */
 .terminos-content {
   background-color: #f7a100;
   color: #7c1c1c;
-  padding: 50px 30px;
+  padding: 30px 20px;
   font-family: 'Cinzel', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 90%;
 }
 
+/* Encapsulamiento visual para dejar bordes blancos alrededor */
+.terminos-content-wrapper {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+
+/* TITULOS Y TEXTO */
 .terminos-content h5 {
   font-weight: bold;
   color: #7c1c1c;
-  margin-top: 30px;
+  margin-top: 25px;
+  font-size: 1.05rem;
 }
 
 .terminos-content p {
   margin-bottom: 1rem;
-}
-
-body {
-  background-color: #f7a100;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .terminos-hero h1 {
-    font-size: 1.8rem;
+  .terminos-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 15px;
   }
-  .terminos-image img {
-    max-width: 200px;
+
+  .hero-text {
+    flex: 1;
   }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-img img {
+    width: 90px;
+    height: 90px;
+  }
+
   .terminos-content {
-    padding: 30px 20px;
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+
+  .terminos-content h5 {
     font-size: 1rem;
   }
-  .terminos-content h5 {
-    font-size: 1.2rem;
+
+  .terminos-content p {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .terminos-hero h1 {
-    font-size: 1.5rem;
+  .terminos-hero {
+    flex-direction: row;
+    gap: 15px;
   }
-  .terminos-image img {
-    max-width: 150px;
+
+  .hero-text h1 {
+    font-size: 1.4rem;
   }
+
+  .hero-img img {
+    width: 75px;
+    height: 75px;
+  }
+
   .terminos-content {
-    padding: 20px 15px;
+    padding: 15px 12px;
+    font-size: 0.85rem;
+  }
+
+  .terminos-content h5 {
     font-size: 0.95rem;
   }
-  .terminos-content h5 {
-    font-size: 1.1rem;
+
+  .terminos-content p {
+    font-size: 0.85rem;
   }
 }

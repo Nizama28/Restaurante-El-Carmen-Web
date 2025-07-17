@@ -1,6 +1,14 @@
+/* FONDO GENERAL */
+body {
+  background: url("../img/fondo.png") center/cover no-repeat fixed;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
+
 /* HERO PRIVACY */
 .privacy-hero {
-  background: url('../img/inicio.jpg') center/cover no-repeat;
+  background: linear-gradient(to right, rgba(124, 28, 28, 0.9), rgba(124, 28, 28, 0)), 
+              url('../img/inicio.jpg') center/cover no-repeat;
   height: 300px;
   display: flex;
   align-items: center;
@@ -10,33 +18,33 @@
   text-align: center;
 }
 
-.privacy-hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(124,28,28, 0.6);
-  z-index: 1;
-}
-
 .privacy-hero h1 {
   position: relative;
   z-index: 2;
   font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 2.5rem;
+  margin: 0;
 }
 
-/* PRIVACY CONTENT */
+/* CONTENIDO */
+.privacy-content-wrapper {
+  background-color: transparent;
+  padding: 40px 15px;
+  display: flex;
+  justify-content: center;
+}
+
 .privacy-content {
   background-color: #f7a100;
-  color: #fff;
-  padding: 50px 30px;
+  color: #7c1c1c;
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 900px;
   width: 100%;
   font-family: 'Cinzel', serif;
   font-size: 1.1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .privacy-content h5 {
@@ -49,11 +57,11 @@
   padding-left: 1.5rem;
 }
 
-body {
-  background-color: #f7a100;
+.privacy-content p {
+  margin-bottom: 1rem;
 }
 
-/* RESPONSIVE QUERIES */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .privacy-hero {
     height: 200px;
@@ -63,13 +71,17 @@ body {
     font-size: 1.8rem;
   }
 
+  .privacy-content-wrapper {
+    padding: 30px 10px;
+  }
+
   .privacy-content {
     padding: 30px 20px;
     font-size: 1rem;
   }
 
   .privacy-content h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -88,6 +100,6 @@ body {
   }
 
   .privacy-content h5 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }

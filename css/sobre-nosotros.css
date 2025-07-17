@@ -227,6 +227,6 @@ body::before {
 
   .text-box {
     padding: 10px;
-    margin: 10px 8px;
+    margin: 10px 0px;
   }
 }

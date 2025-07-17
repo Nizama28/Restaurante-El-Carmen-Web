@@ -1,32 +1,38 @@
+/* FONDO GENERAL */
+body {
+  background: url("../img/fondo.png") center/cover no-repeat fixed;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
+
 /* HERO */
 .cookies-hero {
-  background-color: #7c1c1c;
+  background-color: rgba(124, 28, 28, 0.95); /* fondo rojizo con opacidad */
   color: #fff;
   padding: 60px 20px;
   font-family: 'Cinzel', serif;
+  text-align: center;
 }
 
 .cookies-hero h1 {
   font-weight: 700;
   font-size: 2.5rem;
+  margin: 0;
 }
 
-.cookies-content {
-  background-color: #fff9ec;
-  font-family: 'Cinzel', serif;
-}
+/* CONTENIDO */
 
-.cookies-photo {
-  border-radius: 15px;
-  max-width: 100%;
-  height: auto;
-}
+
+
 
 .cookies-text {
   background-color: #f7a100;
   color: #7c1c1c;
-  font-size: 1.1rem;
+  text-align: justify;
+  font-size: 1.20rem;
   line-height: 1.5;
+  padding: 40px;
+  border-radius: 15px;
 }
 
 /* Responsive */
@@ -37,6 +43,11 @@
 
   .cookies-text {
     font-size: 1rem;
+    padding: 25px;
+  }
+
+  .cookies-content {
+    padding: 30px 20px;
   }
 }
 
@@ -47,5 +58,10 @@
 
   .cookies-text {
     font-size: 0.95rem;
+    padding: 20px;
+  }
+
+  .cookies-content {
+    padding: 25px 15px;
   }
 }

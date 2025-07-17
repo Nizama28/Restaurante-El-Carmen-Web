@@ -14,3 +14,11 @@ main {
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
+.encapsulado-restaurante {
+  background-color: #f7a100; /* Amarillo */
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  margin: 0 auto 3rem auto; /* Centrado y espacio abajo */
+}

@@ -17,7 +17,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" alt="El Carmen" height="50">
       </a>
@@ -39,27 +39,29 @@
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="hero-slide" style="background-image: url('img/inicio.jpg');"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-          <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
-          <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
-        </div>
-      </div>
+  <div class="hero-slide" style="background-image: url('img/inicio.jpg');"></div>
+  <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+    <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
+    <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+  </div>
+</div>
+
       <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('img/inicio2.jpg');"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-          <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
-          <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
-        </div>
-      </div>
+  <div class="hero-slide" style="background-image: url('img/inicio2.jpg');"></div>
+  <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+    <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
+    <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+  </div>
+</div>
+
       <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('img/ceviche2.jpg');"></div>
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
-          <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
-          <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
-        </div>
-      </div>
-    </div>
+  <div class="hero-slide" style="background-image: url('img/ceviche2.jpg');"></div>
+  <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+    <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
+    <a href="https://wa.me/51937395081" class="btn btn-primary-custom mt-3">¡Ordenar ahora!</a>
+  </div>
+</div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -68,60 +70,63 @@
     </button>
   </div>
 
-  <!-- SECCIÓN MENÚ Y RESTAURANTE -->
-  <section class="section-yellow">
-    <div class="container py-5">
-      <div class="row justify-content-center g-4">
-        <!-- Tarjeta MENÚ -->
-        <div class="col-md-6 col-lg-5">
-          <div class="card menu-card h-100">
-            <img src="img/foto4.jpg" class="card-img-top" alt="Nuestro menú">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold text-center">NUESTRO MENÚ</h5>
-              <p class="card-text text-center flex-grow-1">
-                En nuestro menú todo es delicioso y preparado con amor. Descubre una explosión de sabores tradicionales.
-              </p>
-              <div class="text-center mt-3">
-                <a href="carta.pdf" class="btn btn-primary-custom">Ver menú</a>
-              </div>
+<section class="section-yellow-rounded">
+  <div class="container">
+    <div class="row justify-content-center g-3">
+      <!-- Tarjeta MENÚ -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card menu-card-inner text-center">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">NUESTRO MENÚ</h5>
+            <p class="card-text flex-grow-1">
+              En nuestro menú todo es delicioso y preparado con amor.
+            </p>
+            <div class="mt-2">
+              <a href="carta.pdf" class="btn btn-light-custom btn-sm-custom">Ver menú</a>
             </div>
           </div>
         </div>
-        <!-- Tarjeta RESTAURANTE -->
-        <div class="col-md-6 col-lg-5">
-          <div class="card menu-card h-100">
-            <img src="img/foto5.jpg" class="card-img-top" alt="Nuestro restaurante">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold text-center">RESTAURANTE</h5>
-              <p class="card-text text-center flex-grow-1">
-                Nuestro restaurante es un espacio de alegría, lleno de sabor, tradición y buena atención.
-              </p>
-              <div class="text-center mt-3">
-                <a href="nuestro-restaurante.html" class="btn btn-primary-custom">Ver fotos</a>
-              </div>
+      </div>
+      <!-- Tarjeta RESTAURANTE -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card menu-card-inner text-center">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold">RESTAURANTE</h5>
+            <p class="card-text flex-grow-1">
+              Nuestro restaurante es un espacio de alegría y lleno de sabor.
+            </p>
+            <div class="mt-2">
+              <a href="nuestro-restaurante.html" class="btn btn-light-custom btn-sm-custom">Ver fotos</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
 
   <!-- SOMOS EL CARMEN -->
-  <section class="section-white py-5">
-    <div class="container">
-      <div class="somos-row">
-        <div class="somos-col somos-img">
-          <img src="img/plato.png" alt="Comida criolla">
-        </div>
-        <div class="somos-col somos-text">
-          <h2>¡SOMOS EL CARMEN!</h2>
-          <p>
-            Nosotros somos El Carmen, un restaurante picantiería de Piura - La Unión, dedicados a la gastronomía tradicional criolla.
-          </p>
-        </div>
+  <section class="section-white somos-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4">
+      <!-- Imagen -->
+      <div class="col-12 col-md-6 text-center">
+        <img src="img/plato.png" alt="Comida criolla" class="somos-img-responsive">
+      </div>
+      <!-- Texto -->
+      <div class="col-12 col-md-6">
+        <h2 class="somos-title">¡SOMOS <span class="highlight">EL CARMEN!</span></h2>
+        <p class="somos-text">
+          Nosotros somos El Carmen, un restaurante picantiería de Piura - La Unión, dedicados a la gastronomía tradicional criolla.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- ENCUÉNTRANOS -->
   <section class="section-yellow text-center">

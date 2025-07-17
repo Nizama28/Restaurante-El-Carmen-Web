@@ -1,16 +1,22 @@
-/* Fondo general */
+/* ==========================
+   BASE / GENERAL
+========================== */
+
 body {
   background: url("../img/fondo.png") center/cover no-repeat fixed;
   margin: 0;
   font-family: 'Cinzel', serif;
 }
 
-/* Degradado sobre el carrusel */
+
+/* ==========================
+   HERO CAROUSEL
+========================== */
+
 .carousel-inner {
   background: url("../img/degradado.png") center/cover no-repeat;
 }
 
-/* Hero slides con overlay oscuro */
 .hero-slide {
   height: 500px;
   background-size: cover;
@@ -42,7 +48,6 @@ body {
   }
 }
 
-/* Carrusel caption */
 .carousel-caption {
   top: 0;
   bottom: 0;
@@ -53,7 +58,11 @@ body {
   align-items: center;
 }
 
-/* Botón personalizado */
+
+/* ==========================
+   BUTTONS
+========================== */
+
 .btn-primary-custom {
   background-color: #7c1c1c;
   border: none;
@@ -70,14 +79,51 @@ body {
   color: #7c1c1c;
 }
 
-/* Fondo amarillo */
-.section-yellow {
-  background-color: #f7a100;
-  color: #fff;
-  padding: 50px 0;
+.btn-light-custom {
+  background-color: #fff;
+  color: #7c1c1c;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  transition: all 0.3s ease;
 }
 
-/* Tarjetas */
+.btn-light-custom:hover {
+  background-color: #7c1c1c;
+  color: #fff;
+}
+
+.btn-sm-custom {
+  padding: 6px 18px;
+  font-size: 0.9rem;
+}
+
+
+/* ==========================
+   SECTIONS
+========================== */
+
+/* Fondo amarillo redondeado pegado al slider */
+.section-yellow-rounded {
+  background-color: #f7a100;
+  border-radius: 0 0 20px 20px; /* solo esquinas inferiores redondeadas */
+  color: #fff;
+  margin: 16px 0 0 0;
+  padding: 0 20px 40px 20px;
+}
+
+.section-yellow-rounded .container {
+  padding-top: 0;
+}
+
+
+/* ==========================
+   CARDS
+========================== */
+
+/* Clásicas tarjetas con fondo propio (por si se usan en otro lado) */
 .menu-card {
   border: none;
   border-radius: 15px;
@@ -107,12 +153,89 @@ body {
   color: #333;
 }
 
-/* SOMOS EL CARMEN - fondo blanco */
+
+/* NUEVO: Tarjetas internas sobre fondo amarillo */
+.menu-card-inner {
+  background-color: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.menu-card-inner:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+
+.menu-card-inner .card-title {
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+}
+
+.menu-card-inner .card-text {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+
+/* ==========================
+   SOMOS EL CARMEN SECTION
+========================== */
+
 .section-white {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 20px;
   margin: 30px 15px;
-  padding: 30px;
+  padding: 30px 20px;
+}
+
+.somos-title {
+  color: #7c1c1c;
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.somos-title .highlight {
+  color: #f7a100;
+}
+
+.somos-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.somos-img-responsive {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .somos-title {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .somos-text {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  .somos-img-responsive {
+    max-width: 350px;
+  }
 }
 
 .somos-row {
@@ -140,5 +263,27 @@ body {
   }
   .somos-col {
     max-width: 100%;
+  }
+}
+
+
+/* ==========================
+   MOBILE ADJUSTMENTS
+========================== */
+
+@media (max-width: 576px) {
+  .menu-card-inner {
+    padding: 0px 5px;
+    min-height: 200px;
+  }
+  .menu-card-inner .card-title {
+    font-size: 1rem;
+  }
+  .menu-card-inner .card-text {
+    font-size: 0.75rem;
+  }
+  .btn-sm-custom {
+    padding: 5px 14px;
+    font-size: 0.8rem;
   }
 }

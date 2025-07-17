@@ -273,7 +273,7 @@ body {
 
 @media (max-width: 576px) {
   .menu-card-inner {
-    padding: 0px 5px;
+    padding: 0px 0px;
     min-height: 200px;
   }
   .menu-card-inner .card-title {

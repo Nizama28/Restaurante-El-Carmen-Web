@@ -16,10 +16,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.80); /* cambia la opacidad aquí */
-  z-index: -1; /* para que quede detrás del contenido */
+  background-color: rgba(255, 255, 255, 0.80);
+  z-index: -1;
 }
-
 
 /* ==========================
    SECCIÓN HERO + TARJETAS UNIFICADA

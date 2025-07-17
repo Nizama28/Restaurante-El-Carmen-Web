@@ -15,25 +15,44 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="El Carmen" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="carta.pdf">Menú</a></li>
-          <li class="nav-item"><a class="nav-link" href="contáctanos.html">Contáctanos</a></li>
-        </ul>
+<!-- NAVBAR -->
+<nav class="navbar custom-navbar shadow-sm py-2 px-3">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-nowrap">
+    
+    <!-- Logo -->
+    <a class="navbar-brand me-2" href="index.html">
+      <div class="circle-logo">
+        <img src="img/logo.png" alt="El Carmen" />
       </div>
+    </a>
+
+    <!-- Menú + ícono alineados a la derecha -->
+    <div class="d-flex align-items-center gap-2 ms-auto nav-right-group">
+      <!-- Menú desplazable horizontalmente en móvil -->
+      <ul class="navbar-nav flex-row align-items-center scrollable-nav m-0">
+        <li class="nav-item px-1">
+          <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+        <span class="separator">⋅</span>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="carta.pdf">Menú</a>
+        </li>
+        <span class="separator">⋅</span>
+        <li class="nav-item px-1">
+          <a class="nav-link" href="contáctanos.html">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Icono de ubicación -->
+      <a href="https://maps.google.com" class="location-icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+
 
  <!-- SECCIÓN UNIFICADA AMARILLA -->
 <section class="seccion-hero-amplia">
@@ -44,7 +63,7 @@
 <!-- Slide 1 -->
 <div class="carousel-item active">
   <div class="hero-slide" style="
-    background-image: linear-gradient(to right, rgba(124, 28, 28, 0.85), rgba(124, 28, 28, 0) 80%), url('img/inicio.jpg');
+    background-image: linear-gradient(to right, rgba(82, 13, 13, 0.85), rgba(124, 28, 28, 0) 80%), url('img/inicio.jpg');
   "></div>
   <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
     <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
@@ -55,7 +74,7 @@
 <!-- Slide 2 -->
 <div class="carousel-item">
   <div class="hero-slide" style="
-    background-image: linear-gradient(to right, rgba(124, 28, 28, 0.85), rgba(124, 28, 28, 0) 80%), url('img/inicio2.jpg');
+    background-image: linear-gradient(to right, rgba(82, 13, 13, 0.85), rgba(124, 28, 28, 0) 80%), url('img/inicio2.jpg');
   "></div>
   <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
     <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">
@@ -66,7 +85,7 @@
 <!-- Slide 3 -->
 <div class="carousel-item">
   <div class="hero-slide" style="
-    background-image: linear-gradient(to right, rgba(124, 28, 28, 0.85), rgba(124, 28, 28, 0) 80%), url('img/ceviche2.jpg');
+    background-image: linear-gradient(to right, rgba(82, 13, 13, 0.85), rgba(124, 28, 28, 0) 80%), url('img/ceviche2.jpg');
   "></div>
   <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
     <img src="img/slider.png" alt="El Carmen" class="hero-slider-img">

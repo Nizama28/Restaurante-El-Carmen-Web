@@ -4,7 +4,7 @@
   border-radius: 50px;
   border: 2px solid #f0f0f0;
   font-family: 'Cinzel', serif;
-  padding: 6px 16px; /* Compacta la altura */
+  padding: 6px 16px;
 }
 
 /* Logo circular */
@@ -28,13 +28,13 @@
   flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 0;
-  overflow-x: auto;       /* Scroll horizontal si no entra */
-  scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .navbar-nav::-webkit-scrollbar {
-  display: none;          /* Chrome/Safari */
+  display: none;
 }
 
 .nav-item {
@@ -62,7 +62,7 @@
   margin: 0 6px;
 }
 
-/* Ícono de ubicación */
+/* Ícono ubicación */
 .location-icon {
   background-color: #f7a100;
   color: #7c1c1c;
@@ -75,14 +75,14 @@
   font-size: 0.9rem;
 }
 
-/* Grupo final: menú + ubicación */
+/* Grupo derecho: menú + ícono */
 .navbar-end-group {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-/* Responsive */
+/* Responsive: Tablets (<= 991px) */
 @media (max-width: 991.98px) {
   .custom-navbar .container-fluid {
     flex-wrap: nowrap;
@@ -110,5 +110,38 @@
   .circle-logo img {
     width: 22px;
     height: 22px;
+  }
+}
+
+/* Responsive: Smartphones más pequeños (<= 420px) */
+@media (max-width: 420px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .separator {
+    font-size: 1rem;
+    margin: 0 3px;
+  }
+
+  .location-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .circle-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .circle-logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-navbar {
+    padding: 5px 10px;
   }
 }

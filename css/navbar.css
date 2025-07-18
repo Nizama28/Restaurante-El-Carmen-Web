@@ -9,7 +9,6 @@
 
 /* Logo circular */
 .circle-logo {
-  background-color: #f7a100;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -19,8 +18,8 @@
 }
 
 .circle-logo img {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 /* Menú de navegación */
